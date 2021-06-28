@@ -16,9 +16,7 @@ import java.security.Principal;
 import java.util.Collection;
 
 /**
- * ToDo: Update access URLs. Controller that resolves to a user identity / role based on a passed oauth2 token.
- * <p>
- * Sample access: curl "http://127.0.0.1:8084/api/username?access_token=...="
+ * Sample access: curl "http://127.0.0.1:4242/api/username?access_token=...="
  *
  * @author Maximilian Schiedermeier, August 2020
  */
@@ -65,7 +63,7 @@ public class TokenController {
     }
 
     /**
-     * Method to actually discard the tokens. Is also required by Account-Controller uppon user deletion.
+     * Method to actually discard the tokens. Is also required by Account-Controller upon user deletion.
      *
      * @param name as the name of the user whose tokens shall be revoked.
      */
